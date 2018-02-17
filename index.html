@@ -1,0 +1,66 @@
+    
+<html>
+<head>
+  <title>Pomodoro Timer</title>
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+</head>
+<body>
+  <div class="container text-center">
+    <h1 id="page_title">Pomodoro Timer</h1>
+    <hr class="custom_hr" width="50px;">
+     <span>Session Length</span>
+     <br>
+     <br>
+      <div class="custom_btn row text-center">
+        <button onclick="dec_session_length()" class=" glyphicon glyphicon-chevron-left col-xs-4"></button>
+        <span id="session_length" class=" col-xs-4">1</span>
+        <button onclick="inc_session_length()" class="glyphicon glyphicon-chevron-right  col-xs-4"></button>
+      </div>
+           <br>
+
+    <span>Break Length</span>
+         <br>
+             <br>
+
+    <div class="custom_btn row text-center">
+      <button style="background: #2979FF" onclick="dec_break_length()" class=" glyphicon glyphicon-chevron-left col-xs-4"></button>
+      <span id="break_length" class=" col-xs-4">1</span>
+      <button style="background: #2979FF" onclick="inc_break_length()" class="glyphicon glyphicon-chevron-right  col-xs-4"></button>
+    </div>
+    <br>
+
+
+    <br><br>
+    <button class="btn btn-success" id="control_btn" onclick="clock_init()">START</button>
+    <button class="btn btn-danger" id="reset_btn" onclick="clock_clear()">STOP</button>
+
+    <br><br> <br>
+
+
+    <div id="pomodoro_clock"><span id="time_text">1:00</span></div>
+    <div id="pomodoro_radial"></div>
+    <div id="pomodoro_clock_mask"></div>
+    <div id="pomodoro_clock_filler"></div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p>Print icon: <span class="glyphicon glyphicon-print"></span></p> -->

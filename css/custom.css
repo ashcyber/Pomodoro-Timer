@@ -1,0 +1,105 @@
+
+body{
+font-family: 'Gloria Hallelujah', cursive;
+}
+.custom_btn{
+  height: 22px; 
+
+  margin: auto;
+  width: 150px; 
+
+}
+
+.custom_btn .glyphicon-chevron-left{
+  border: 2px solid black; 
+  margin-top: -1px; 
+  line-height: 18px; 
+  height: 100%; 
+  background: #E44D26;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.custom_btn #break_length, #session_length{
+  font-weight: bold;
+  border: 1px solid #ccc; 
+  text-align: center;
+  background: #C9D6FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.custom_btn .glyphicon-chevron-right{
+    border: 2px solid black; 
+
+
+  margin-top: -1px; 
+  line-height: 18px; 
+  height: 100%; 
+  background: #E44D26;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F16529, #E44D26); 
+
+}
+
+#pomodoro_clock{
+  margin: auto;  
+  width: 180px; 
+  height: 180px; 
+  border: 4px solid #ccc; 
+  border-radius: 100%; 
+
+}
+
+#pomodoro_radial{
+  position: relative;
+  z-index: 3;
+  top: -190px; 
+  margin: auto;
+  width: 200px; 
+  height: 200px; 
+  border: 4px solid #ef6228; 
+  border-radius: 100%;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+}
+
+#pomodoro_clock_mask{
+  z-index: 20;
+  position: relative;
+  top: -392px; 
+  margin: auto;
+  width: 205px; 
+  height: 205px;
+  border: 10px solid white;
+  border-radius: 100%;  
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+} 
+
+#pomodoro_clock_filler{
+  z-index: 1;
+  position: relative;
+  top: -595px; 
+  margin: auto;
+  width: 200px; 
+  height: 200px;
+  border: 4px solid white;
+  border-radius: 100%;  
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(225deg);
+} 
+
+#time_text {
+  line-height: 165px; 
+  font-size: 40px;
+}
+
+  <div>Time left = <span id="timer"></span></div>
