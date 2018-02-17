@@ -2,34 +2,34 @@
 $(document).ready(function($) {
     $('#reset_btn').hide(); 
 });
-var total_time = 60; 
+var total_time = 60; // default values 
 var break_time = 60; 
 
 
 function inc_break_length(){
-    clock_clear();
     var cur = $("#break_length").text(); 
     if(cur < 60){
         cur++;
         $("#break_length").html(cur); 
         break_time = cur * 60; 
     }
+    clock_clear();
 }
 
 
 function dec_break_length(){
-    clock_clear();
     var cur = $("#break_length").text(); 
     if(cur > 1){
         cur--; 
         $("#break_length").html(cur); 
         break_time = cur * 60; 
     }
+    clock_clear();
+
 }
 
 
 function inc_session_length(){
-    clock_clear();
     var cur = $("#session_length").text(); 
     if(cur < 60){
         cur++; 
@@ -37,11 +37,12 @@ function inc_session_length(){
         $("#time_text").html(cur + ":00"); 
         total_time = cur * 60; 
     }
+    clock_clear();
+
 }
 
 
 function dec_session_length(){
-    clock_clear();
     var cur = $("#session_length").text(); 
     if(cur >  1){
         cur--; 
@@ -51,6 +52,9 @@ function dec_session_length(){
 
 
     }
+    clock_clear();
+
+
 }
 
 
